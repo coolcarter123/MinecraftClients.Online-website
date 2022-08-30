@@ -1,0 +1,36 @@
+notification {
+    display: block;
+    background-color: rgb(90, 86, 200);
+    margin: 5px auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+    max-width: 900px;
+}
+notification span.title {
+    font-size: 20px;
+    margin: 5px 0px 10px 0px;
+    color: rgb(196, 233, 255);
+}
+
+
+notification span.description {
+    font-size: 17px;
+    color:rgb(232, 227, 255);
+}
+
+
+notification a {
+    color: rgb(255, 131, 131);
+    text-decoration: none;
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    padding: 0px 10px;
+    transition: color 0.5s;
+}
+
+
+notification a:hover {
+    transition: color 0.5s;
+    color: rgb(255, 177, 212);
+
+}

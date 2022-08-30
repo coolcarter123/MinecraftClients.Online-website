@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Minecraft Clients List</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/containers.css">
+        <link rel="stylesheet" href="css/btns.css">
+        <link rel="stylesheet" href="css/cards.css">
+        <link rel="stylesheet" href="css/notification.css">
+        <meta content="MinecraftClients.online" property="og:title" />
+        <meta content="The home of Minecraft cheating" property="og:description" />
+        <meta content="The home of Minecraft cheating" property="description" />
+        <meta content="https://minecraftclients.online/" property="og:url" />
+        <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+    
+    <body>
+        <header>
+            <section>
+                <nav>
+                    <span style="width: 100%;">
+                        <a href="https://minecraftclients.online/"><h1>MinecraftClients</h1></a>
+                        <img src="img/Menu.png" onclick="onClick()">
+                    </span>
+                    <div class="navshit">
+                        <a href="#welcome">Welcome</a>
+                        <a href="#clients">Clients</a>
+                        <a href="#altshops">Alt Shops</a>
+                        <a href="#resellers">Resellers</a>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <content>
+
+            <notification>
+                <span class="title">Important Information</span>
+                <span class="description">
+                    Recently some alligations were made about intent.store being ratted.<br> 
+                    This has caused quite a some of the clients featured on here to be removed from intent.<br>
+                    For more information on this topic, <a href="https://minecraftclients.news/index.php/2022/07/18/what-happened-to-intent-store/">check out this post from minecraftclients.news</a>!
+                </span>
+            </notification>
+
+            <section id="welcome">
+                <h1>Welcome</h1>
+                <h2>Welcome to the home of Minecraft Clients</h2>
+                <div class="cards">
+                    <card>
+                        <span class="title">Simpler</span>
+                        <span class="desc">We make it easier to find Clients, Alt Shops, Resellers and Client Media</span>
+                    </card>
+                    <card>
+                        <span class="title">Actively Maintained</span>
+                        <span class="desc">This website is actively updated and maintained with the latest information</span>
+                    </card>
+                </div>
+                <a class="dropbtn" href="#clients"></a>
+                <h3 class="gray">If you want your product or service listed <a class="highlight" href="https://discord.gg/QD8uH7AGB9" target="_blank">click here!</a></h3>
+                <h2></h2>
+            </section>
+
+            <section id="clients">
+                <h1>Clients</h1>
+                <h2>This is a list of Minecraft Clients</h2><br>
+                <h3 class="gray">If purchasing from a reseller, make sure to redeem the key on the products website</h3>
+                
+                <div class="cards" id="clients-list">
+
+                </div>
+                <h3 class="gray">If there is any inaccuracies, report it in <a class="highlighted">the discord</a></h3>
+            </section>
+
+            <section id="altshops">
+                <h1>Alt Shops</h1>
+                <h2>This is a list of Popular Alt Shops</h2><br>
+                
+                <div class="cards" id="clients-list">
+                    
+                    <imgcard>
+                        <img src="https://alts.top/img/logo.png" style="object-fit: contain;">
+                        <titlex>Alts.top</titlex>
+                        <span class="desc">Popular, trusted and reliable alt shop</span>
+                        <a href="https://alts.top" target="_blank"><imgbtn>Click Here</imgbtn></a>
+                    </imgcard>
+
+                    <imgcard>
+                        <img src="img/kingalts-2.png" style="object-fit: contain;">
+                        <titlex>Kingalts.shop</titlex>
+                        <span class="desc">Trusted alt shop with a variety of options</span>
+                        <a href="https://kingalts.shop" target="_blank"><imgbtn>Click Here</imgbtn></a>
+                    </imgcard>
+
+
+                </div>
+            </section>
+
+            <section id="resellers">
+                <h1>Resellers</h1>
+                <h2>This is a list of Popular and Trusted Resellers</h2><br>
+                
+                <div class="cards" id="clients-list">
+                    
+                    <imgcard>
+                        <img src="https://imagedelivery.net/95QNzrEeP7RU5l5WdbyrKw/7a0938d1-8ae8-4ed1-eef8-b1867fd19000/avatar" style="object-fit: contain;">
+                        <titlex>Vetric</titlex>
+                        <span class="desc">Experienced and trusted resellers</span>
+                        <a href="https://vetric.sellix.io/" target="_blank"><imgbtn>Click Here</imgbtn></a>
+                    </imgcard>
+
+                    <imgcard>
+                        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/1/12/Grass_Block_JE2.png/revision/latest?cb=20200830142618" style="object-fit: contain;">
+                        <titlex>MinecraftClients.com</titlex>
+                        <span class="desc">Simple and popular resellers</span>
+                        <a href="https://minecraftclients.com/" target="_blank"><imgbtn>Click Here</imgbtn></a>
+                    </imgcard>
+
+                    <imgcard>
+                        <img src="https://spezz.exchange/store/uploads/monthly_2022_03/se_120.png.648b0ff5b79fb476b2b89ac8648d5481.png" style="object-fit: contain;">
+                        <titlex>Spezz Exchange</titlex>
+                        <span class="desc">Long time and larger seller</span>
+                        <a href="https://spezz.exchange/" target="_blank"><imgbtn>Click Here</imgbtn></a>
+                    </imgcard>
+
+
+                </div>
+            </section>
+
+        </content>
+        
+        <overlay id="overlay">
+            <scale>
+                <div class="container">
+                    <div class="top">
+                        <titlex class="titlex">x</titlex>
+                        <img src="img/exit.png" onclick="hideoverlay(event, false)">
+                    </div>
+                    <div class="sellers">
+                        
+                    </div>
+                </div>
+            </scale>
+        </overlay>
+
+        <script src="js/mobilenav.js"></script>
+        <script src="js/clients.js"></script>
+    </body>
+
+</html>

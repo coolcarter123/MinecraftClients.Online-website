@@ -1,0 +1,114 @@
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+}
+
+card {
+    border-radius: 15px;
+    transform: translate(0px, 0px); /*Ignore this, MAY be removed later*/
+    transition: transform 0.5s, filter 0.5s;
+    margin: 25px;
+    text-align: center;
+    color: white;
+    padding: 15px 25px;
+    width: 270px;
+    padding-bottom: 15px;
+    background-color: rgb(56, 56, 74);
+}
+
+span.title {
+    display: block;
+    margin: 15px 0px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+span.desc {
+    display: block;
+    font-size: 20px;
+}
+
+
+imgcard {
+    border-radius: 15px;
+    transform: translate(0px, 0px); /*Ignore this, MAY be removed later*/
+    transition: transform 0.5s, filter 0.5s;
+    margin: 25px;
+    text-align: center;
+    color: white;
+    width: 400px;
+    padding-bottom: 15px;
+    background-color: rgb(26, 26, 32);
+}
+
+imgcard img {
+    filter: blur(2px);
+    width: 100%;
+    overflow: hidden;
+    height: 120px;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 0px;
+    object-fit: cover;
+}
+
+
+imgcard source {
+    color: rgb(195, 195, 195);
+}
+
+imgcard price {
+    display: block;
+    margin: 15px;
+    font-size: 20px;
+    color: rgb(119, 213, 119);
+    text-align: center;
+}
+
+imgcard a {
+    display: contents;
+    text-decoration: none;
+}
+imgcard imgbtn {
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(59, 57, 133);
+    padding: 15px;
+    width: 200px;
+    margin-top: 10px;
+    transition: background-color 0.5s;
+}
+
+
+imgcard imgbtn:hover {
+    cursor: pointer;
+    background-color: rgb(113, 108, 255);
+    transition: background-color 0.5s;
+}
+
+imgcard:hover {
+    transition: transform 0.5s, filter 0.5s;
+    filter: drop-shadow(0 25px 0.5rem rgb(29, 29, 29));
+    transform: translate(0px, -10px);
+}
+
+imgcard titlex {
+    display: block;
+    font-size: 30px;
+    color: rgb(113, 108, 255);
+    text-align: center;
+    margin: 0px;
+    margin-top: 0.67em;
+}
+
+imgcard imgbtn sellerText {
+    color: rgb(164, 255, 154);
+}

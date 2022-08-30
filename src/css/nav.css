@@ -1,0 +1,126 @@
+
+/*
+    MOBILE
+*/
+
+@media (max-width:750px) {
+
+    nav h1 {
+        display: inline-block;
+    }
+    nav span img {
+        float: right;
+        height: 30px;
+        margin-top: 7px;
+    }
+    nav div {
+        margin-top: 5px;
+        display: block;
+        overflow: hidden;
+        max-height: 0px;
+        width: 100%;
+        margin-right: 5px;
+        transition: all 1s;
+    }
+
+    nav {
+        margin-right: 30px;
+    }
+
+    
+    nav div a{
+        color: rgb(185, 182, 255);
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        width: 100%;
+        background-color: rgb(29, 29, 29);
+    }
+
+    /*
+        32.5 * Each NavItem
+    */
+
+    nav div.opened {
+        transition: all 1s;
+        max-height:130px;
+    }
+
+}
+
+
+
+section {
+    max-width: 900px;
+    margin: auto;
+}
+
+content {
+    display: block;
+    margin: 0px 5px;
+    margin-top: 100px;
+}
+
+header {
+    border-top: 5px solid rgb(113, 108, 255);
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    padding: 15px;
+    background-color: rgb(30, 30, 30);
+}
+nav h1 {
+    color: rgb(113, 108, 255);
+    font-size: 30px;
+    margin: 0;
+}
+
+/*
+    DESKTOP
+*/
+@media (min-width:750px) {
+
+    nav {
+        overflow: hidden;
+    }
+
+    nav img {
+        visibility: hidden;
+        position: fixed;
+        height: 0;
+    }
+
+    nav div {
+        float: right;
+        margin-right: 30px;
+    }
+
+
+    
+    nav div a {
+        border-radius: 2px;
+        float: left;
+        margin: auto 2px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(41, 35, 54);
+        display: block;
+        text-align: center;
+        width: 100px;
+        padding: 10px 0px;
+        transition: background-color 0.5s, color 0.5s;
+    }
+
+    nav h1 {
+        
+        float: left;
+    }
+
+    nav div a:hover {
+        transition: background-color 0.5s, color 0.5s;
+        background-color: rgb(113, 108, 255);
+        color: black;
+    }
+    
+}

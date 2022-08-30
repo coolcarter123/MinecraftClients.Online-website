@@ -1,0 +1,19 @@
+.dropbtn {
+    width: 30px;
+    height: 30px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(31, 30, 38);
+    background-image: url(../img/down.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    transition: box-shadow 0.5s;
+    margin: 15px auto;
+}
+
+.dropbtn:hover {
+    transition: box-shadow 0.5s;
+    box-shadow:0px 0px 0px 2px rgb(113, 108, 255) inset;
+
+}

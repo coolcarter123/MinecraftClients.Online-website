@@ -1,0 +1,136 @@
+overlay {
+    display: block;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    top: 0;
+    pointer-events: none;
+    left: 0;
+    transition: background-color 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.container {
+    border-radius: 5px;
+    overflow: hidden;
+    display: block;
+    width: 320px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(53, 53, 64);
+    filter: drop-shadow(0px 0px 2rem black);
+}
+
+overlay > scale {
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+    transform: scale(0,0);
+}
+
+overlay.visible > scale {
+    display: block;
+    transition: transform 0.5s;
+    transform: scale(1,1);
+}
+
+overlay disclaimertxt {
+    display: block;
+    text-align: center;
+    padding: 2px;
+    background-color: rgb(44, 45, 50);
+    margin: 5px 15px;
+    border: solid rgb(42, 42, 42) 2px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgb(255, 84, 84);
+}
+
+
+overlay disclaimer {
+    display: block;
+    font-size: 15px;
+    color: rgb(255, 150, 150);
+}
+
+overlay.visible {
+    transition: background-color 0.5s;
+    background-color: rgba(0, 0, 0, 0.7);
+    pointer-events: all;
+}
+
+.container.visible {
+    scale: 1;
+}
+
+.container object {
+    width: 310px;
+    display: block;
+    background-color: rgb(53, 53, 64);
+    padding: 5px;
+}
+
+.container item {
+    background-color: rgb(41, 41, 50);
+    border-radius: 2px;
+    width: 270px;
+    padding: 5px 10px;
+    display: block;
+    margin: auto;
+}
+
+
+.container item titlex {
+    padding: 3px 0px;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 19px;
+}
+
+
+.container item a {
+    width: 100px;
+    background-color: rgb(59, 57, 133);
+    display: block;
+    float: right;
+    text-align: center;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    margin-top: -2px;
+    padding: 7px;
+    font-weight: 600;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.container item a:hover {
+    transition: background-color 0.5s, color 0.5s;
+    background-color: rgb(113, 108, 255);
+    color: black;
+}
+
+.container .top {
+    padding: 5px 20px;
+    background-color: rgb(39, 39, 50);
+}
+
+.container .top titlex {
+    font-size: 25px;
+    display: block;
+}
+
+
+.container .top img {
+    float: right;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+}
